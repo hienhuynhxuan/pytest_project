@@ -8,4 +8,4 @@ Small project test
 - Executing: pip installl -r requirements.txt
 
 More
-- Write the setting information in .txt file : pip freeze > requirements.txt
+- Virtual environment: pip freeze > requirements.txt
