@@ -1,11 +1,11 @@
 from helpers.request_helper import RequestHelper
-
+from helpers.endpoints import GET_A_PHOTO_ENDPOINT
 
 class PhotoHelper(RequestHelper):
     @staticmethod
     def get_a_photo(photo_id):
-        endpoint = '/photos/{id}'.format(id=photo_id)
-        return RequestHelper.get(endpoint=endpoint, headers=True)
+        # endpoint = '/photos/{id}'.format(id=photo_id)
+        return RequestHelper.get(endpoint=GET_A_PHOTO_ENDPOINT, headers=True)
 
     @staticmethod
     def get_a_random_photo():
